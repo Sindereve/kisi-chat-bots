@@ -1,0 +1,11 @@
+services:
+  kiwi:
+    build: .
+    env_file: .env
+    environment:
+      # Перебивают значения из .env: состояние живёт в volume, а не в рабочей папке.
+      DB_FILE: /data/state.db
+      LOG_FILE: /data/bot.log
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

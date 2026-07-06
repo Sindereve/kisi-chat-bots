@@ -1,0 +1,11 @@
+.git
+.venv
+__pycache__
+*.py[oc]
+.env
+data
+state.db
+state.json
+bot.log*
+tests
+scripts

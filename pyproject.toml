@@ -1,0 +1,15 @@
+[project]
+name = "kiwi-araga-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "litellm>=1.90.2",
+    "python-dotenv>=1.2.2",
+    "python-telegram-bot>=21",
+    "telegramify-markdown>=1.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
